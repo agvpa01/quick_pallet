@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-type PalletQrPayload = { type: "pallet"; id: string };
+// PalletQrPayload type removed; not used
 
 export default function ScanPalletPage() {
   const router = useRouter();
