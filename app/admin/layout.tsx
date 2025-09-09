@@ -23,6 +23,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           <SidebarLink href="/admin/pallets" segment="pallets">
             Pallets
           </SidebarLink>
+          <SidebarLink href="/admin/users" segment="users">
+            Users
+          </SidebarLink>
           <SidebarLink href="/admin/warehouses" segment="warehouses">
             Warehouses
           </SidebarLink>
@@ -127,6 +130,7 @@ function AdminNavbar() {
               <SidebarLink href="/admin" segment="">Dashboard</SidebarLink>
               <SidebarLink href="/admin/products" segment="products">Products</SidebarLink>
               <SidebarLink href="/admin/pallets" segment="pallets">Pallets</SidebarLink>
+              <SidebarLink href="/admin/users" segment="users">Users</SidebarLink>
               <SidebarLink href="/admin/warehouses" segment="warehouses">Warehouses</SidebarLink>
             </nav>
             <hr className="my-4" />

@@ -23,6 +23,14 @@ export default defineSchema({
     description: v.optional(v.string()),
     isDefault: v.optional(v.boolean()),
   }).index("by_code", ["code"]),
+  app_users: defineTable({
+    email: v.string(),
+    role: v.string(), // admin | staff | viewer
+    warehouseId: v.optional(v.id("warehouses")),
+    location: v.optional(v.string()),
+    active: v.boolean(),
+    createdAt: v.number(),
+  }).index("by_email", ["email"]),
   sync_status: defineTable({
     userId: v.string(),
     status: v.string(), // running | completed | error
