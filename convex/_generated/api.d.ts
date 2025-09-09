@@ -19,6 +19,7 @@ import type * as myFunctions from "../myFunctions.js";
 import type * as pallets from "../pallets.js";
 import type * as products from "../products.js";
 import type * as unleashed from "../unleashed.js";
+import type * as users from "../users.js";
 import type * as warehouses from "../warehouses.js";
 
 /**
@@ -36,6 +37,7 @@ declare const fullApi: ApiFromModules<{
   pallets: typeof pallets;
   products: typeof products;
   unleashed: typeof unleashed;
+  users: typeof users;
   warehouses: typeof warehouses;
 }>;
 export declare const api: FilterApi<
